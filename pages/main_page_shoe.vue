@@ -110,7 +110,7 @@
         <div class="grid grid-flow-col auto-cols-max mt-2">
 <div class="ml-9 justify-center mt-9"  >
   <p class="mt-2.5 mb-4 p-1 bg-gray-100 text-2xl flex justify-center  border-t-4 rounded-md border-green-500 ">Production </p>
-    <div v-for=" item in shoe_production" :key="item._id" class="mb-6 flex flex-col md:items-center  bg-gray-50 border border-gray-300 rounded-lg shadow-2xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <div v-for=" item in shoe_production" :key="item._id" @click="detail()" class="mb-6 flex flex-col md:items-center  bg-gray-50 border border-gray-300 rounded-lg shadow-2xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
         <img referrerpolicy="no-referrer" class="object-cover w-full rounded-t-lg h-96 border border-gray-400 md:h-cover md:w-5/12 md:rounded-none md:rounded-l-lg sm:w-12/12" :src="item.image_url" alt="" >
         <div class="ml-2.5 flex flex-col item-center">
             <h4 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">{{ item.title }}</h4>
@@ -352,7 +352,7 @@
 
         <div class="ml-9 justify-center mt-9">
           <p class="mt-2.5 mb-4 p-1 bg-gray-100 text-2xl flex justify-center  border-t-4 rounded-md border-red-500">Warehouse </p>
-          <div v-for=" item in shoe_production" :key="item._id" class="mb-6 flex flex-col md:items-center  bg-gray-50 border border-gray-300 rounded-lg shadow-2xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <div v-for=" item in shoe_production" :key="item._id" @click="detail()" class="mb-6 flex flex-col md:items-center  bg-gray-50 border border-gray-300 rounded-lg shadow-2xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
         <img referrerpolicy="no-referrer" class="object-cover w-full rounded-t-lg h-96 border border-gray-400 md:h-cover md:w-5/12 md:rounded-none md:rounded-l-lg sm:w-12/12" :src="item.image_url" alt="">
         <div class="ml-2.5 flex flex-col item-center">
             <h4 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">{{ item.title }}</h4>
@@ -382,7 +382,7 @@
 
           <div class="ml-9 justify-center mt-9">
             <p class="mt-2.5 mb-4 p-1 bg-gray-100 text-2xl flex justify-center  border-t-4 rounded-md border-blue-500">Customer </p>
-            <div v-for=" item in shoe_production" :key="item._id" class="mb-6 flex flex-col md:items-center  bg-gray-50 border border-gray-300 rounded-lg shadow-2xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            <div v-for=" item in shoe_production" :key="item._id" @click="detail()" class="mb-6 flex flex-col md:items-center  bg-gray-50 border border-gray-300 rounded-lg shadow-2xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
         <img referrerpolicy="no-referrer" class="object-cover w-full rounded-t-lg h-96 border border-gray-400 md:h-cover md:w-5/12 md:rounded-none md:rounded-l-lg sm:w-12/12" :src="item.image_url" alt="">
         <div class="ml-2.5 flex flex-col item-center">
             <h4 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">{{ item.title }}</h4>
